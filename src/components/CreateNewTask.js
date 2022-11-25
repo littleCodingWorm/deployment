@@ -22,7 +22,7 @@ export default class Form extends Component {
       completed: false,
     };
     axios
-      .post('http://localhost:4000/', newTask)
+      .post('https://taupe-quokka-8eb83c.netlify.app/', newTask)
       .then((response) => console.log(`${response.data}`))
       .catch((error) => console.log(error));
   }

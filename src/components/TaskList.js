@@ -24,7 +24,7 @@ export default class TaskList extends Component {
   // component did mount
   componentDidMount() {
     axios
-      .get('http://localhost:4000/')
+      .get('https://taupe-quokka-8eb83c.netlify.app/')
       .then((response) => {
         this.setState({ tasks: response.data });
       })

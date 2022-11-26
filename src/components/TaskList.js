@@ -24,7 +24,7 @@ export default class TaskList extends Component {
   // component did mount
   componentDidMount() {
     axios
-      .get('https://taupe-quokka-8eb83c.netlify.app/')
+      .get('https://git.heroku.com/deployment-todo.git/')
       .then((response) => {
         this.setState({ tasks: response.data });
       })
